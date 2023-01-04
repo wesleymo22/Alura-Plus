@@ -3,7 +3,8 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-fundo: #00030C;
-    --fonte-principal: 'Inter'
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #001aff;
 }
 
 body {
@@ -57,9 +58,19 @@ body {
 
 }
 
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
 .botao__secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
+}
+
+.botao__secundario:hover{
+    background-color: transparent;
+    border: 2px solid var(--cinza-secundario);
+    color: var(--cinza-secundario);
 }
 
 .container__aviso {
@@ -110,19 +121,39 @@ body {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 3em;
+    margin: 5em;
 }
 
 footer {
     text-align: center;
-    margin: 10em;
-}
-
-.footer__links {
-    display: inline-block;
-    margin: 1em ;
+    margin: 0 10em 5em 10em;
 }
 
 .footer__copyright {
     color: var(--cinza-secundario);
+
+}
+
+.footer__lista{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.footer_itens{
+    margin: 1em;
+    list-style-type: none;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.footer__link:hover{
+    color: var(--botao-azul);
+}
+
+.footer__link:active{
+    color: orange;
 }
