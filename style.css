@@ -198,7 +198,7 @@ footer {
     .descricao__texto {
         color: var(--cinza-secundario);
         text-align: center;
-        margin: 2em 0;
+        margin: 2em 1em;
     }
 
     main {
@@ -241,5 +241,4 @@ footer {
     .footer__copyright{
         margin: 1em;
     }
-    
 }
