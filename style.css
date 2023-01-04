@@ -22,6 +22,7 @@ body {
 
 .container {
     height: 100vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -78,9 +79,12 @@ body {
     font-size: 12px;
 }
 
+main {
+    padding: 0 5em
+}
+
 .secundario {
     align-items: center;
-    margin: 0 10em;
 }
 
 .secundario__imagem {
@@ -195,6 +199,10 @@ footer {
         color: var(--cinza-secundario);
         text-align: center;
         margin: 2em 0;
+    }
+
+    main {
+        padding: 0;
     }
 
     .secundario {
